@@ -65,9 +65,7 @@ plt.show()
 
 <<<<<<< HEAD
 ![alt text](image.png)
-=======
-<img width="266" height="411" alt="image" src="https://github.com/user-attachments/assets/7ea7b521-876f-4e43-9c7b-99e17ba951f7" />
->>>>>>> d5d927ab04b2b9d36d92f80f0c222cfdf5dad55e
+
 
 
 ```python
@@ -91,12 +89,6 @@ plt.axis('off')
 plt.show()
 ```
 
-<<<<<<< HEAD
-![alt text](image-1.png)
-=======
-<img width="266" height="411" alt="image" src="https://github.com/user-attachments/assets/50e31b4c-83f1-4161-a761-76941a929e4d" />
->>>>>>> d5d927ab04b2b9d36d92f80f0c222cfdf5dad55e
-
 
 ```python
 # Load the image
@@ -112,13 +104,6 @@ plt.title("Image with Circle")
 plt.axis('off')  
 plt.show()
 ```
-
-<<<<<<< HEAD
-![alt text](image-2.png)
-=======
-<img width="266" height="411" alt="image" src="https://github.com/user-attachments/assets/eb703363-9c56-4b74-8599-d2bd5797fad9" />
->>>>>>> d5d927ab04b2b9d36d92f80f0c222cfdf5dad55e
-
 
 ```python
 # Load the image
@@ -138,12 +123,6 @@ plt.axis('off')
 plt.show()
 ```
 
-<<<<<<< HEAD
-![alt text](image-3.png)
-=======
-<img width="266" height="411" alt="image" src="https://github.com/user-attachments/assets/c9eaa9ef-a43b-4dc7-9379-e4964338641a" />
->>>>>>> d5d927ab04b2b9d36d92f80f0c222cfdf5dad55e
-
 
 ```python
 # Load the image
@@ -162,12 +141,6 @@ plt.axis('off')
 plt.show()
 ```
 
-<<<<<<< HEAD
-![alt text](image-4.png)
-=======
-<img width="266" height="411" alt="image" src="https://github.com/user-attachments/assets/b470af23-858c-4a34-b04a-16c9f2073104" />
->>>>>>> d5d927ab04b2b9d36d92f80f0c222cfdf5dad55e
-
 
 ```python
 # Convert RGB to HSV
@@ -180,12 +153,6 @@ plt.title("HSV Image")
 plt.axis("off")
 ```
 
-<<<<<<< HEAD
-![alt text](image-5.png)
-=======
-<img width="266" height="411" alt="image" src="https://github.com/user-attachments/assets/b6b586eb-89bf-4b21-80de-33987ecbbee4" />
->>>>>>> d5d927ab04b2b9d36d92f80f0c222cfdf5dad55e
-
 
 ```python
 # Convert RGB to GRAYa
@@ -196,12 +163,6 @@ plt.imshow(image_gray, cmap='gray')
 plt.title("Grayscale Image")
 plt.axis("off")
 ```
-
-<<<<<<< HEAD
-![alt text](image-6.png)
-=======
-<img width="266" height="411" alt="image" src="https://github.com/user-attachments/assets/3e02658b-0e5f-4d47-b8c3-291e3d141dfe" />
->>>>>>> d5d927ab04b2b9d36d92f80f0c222cfdf5dad55e
 
 
 ```python
@@ -221,13 +182,6 @@ plt.title("Flipped Horizontally")
 plt.axis("off")
 ```
 
-<<<<<<< HEAD
-![alt text](image-7.png)
-=======
-<img width="266" height="411" alt="image" src="https://github.com/user-attachments/assets/a117b793-2b74-44d6-9fc9-763ad7be7fbe" />
-
-
->>>>>>> d5d927ab04b2b9d36d92f80f0c222cfdf5dad55e
 
 
 ```python
@@ -244,15 +198,7 @@ plt.title("Flipped Vertically")
 plt.axis("off")
 ```
 
-<<<<<<< HEAD
-![alt text](image-8.png)
-
-## Result
-Thus, the Python program to perform basic image handling operations—reading, resizing, color space transformation, drawing geometric shapes (line, circle, rectangle), and annotating text onto the image using OpenCV and Matplotlib—was executed successfully.
-=======
-<img width="266" height="411" alt="image" src="https://github.com/user-attachments/assets/7149db3f-9c64-4a9a-b62d-b98052e060c6" />
 
 
 ## Result
 Thus, the Python program to perform basic image handling operations—reading, resizing, color space transformation, drawing geometric shapes (line, circle, rectangle), and annotating text onto the image using OpenCV and Matplotlib—was executed successfully.
->>>>>>> d5d927ab04b2b9d36d92f80f0c222cfdf5dad55e
