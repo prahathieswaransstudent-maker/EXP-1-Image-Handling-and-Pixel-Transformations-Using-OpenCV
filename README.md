@@ -63,8 +63,8 @@ plt.axis('off')  # Removes axis ticks and labels
 plt.show()
 ```
 
-<<<<<<< HEAD
-![alt text](image.png)
+<img width="266" height="411" alt="image" src="https://github.com/user-attachments/assets/06600635-6339-4ab8-8982-a9282dfe8a22" />
+
 
 
 
@@ -89,6 +89,8 @@ plt.axis('off')
 plt.show()
 ```
 
+<img width="266" height="411" alt="image" src="https://github.com/user-attachments/assets/54f62f34-5971-4841-bbc0-0b449e84fde7" />
+
 
 ```python
 # Load the image
@@ -104,6 +106,9 @@ plt.title("Image with Circle")
 plt.axis('off')  
 plt.show()
 ```
+
+<img width="266" height="411" alt="image" src="https://github.com/user-attachments/assets/eb8c1219-dc1a-404f-a074-6c0098d7f0a2" />
+
 
 ```python
 # Load the image
@@ -123,6 +128,9 @@ plt.axis('off')
 plt.show()
 ```
 
+<img width="266" height="411" alt="image" src="https://github.com/user-attachments/assets/63828900-eef6-42a7-8397-f37d23ba3ee1" />
+
+
 
 ```python
 # Load the image
@@ -141,6 +149,8 @@ plt.axis('off')
 plt.show()
 ```
 
+<img width="266" height="411" alt="image" src="https://github.com/user-attachments/assets/33daab44-d247-47c5-9d53-d767d3bc2785" />
+
 
 ```python
 # Convert RGB to HSV
@@ -153,6 +163,30 @@ plt.title("HSV Image")
 plt.axis("off")
 ```
 
+<img width="266" height="411" alt="image" src="https://github.com/user-attachments/assets/f75bf734-d68b-4695-a6a4-91fc95f1cff9" />
+```
+# Load the image
+image = cv2.imread(image_path)
+# Convert BGR (OpenCV's default) to RGB (Matplotlib's expected color order)
+img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+img.shape
+```
+
+```
+(1536, 1024, 3)
+```
+
+```
+# Convert RGB to HSV
+image_hsv = cv2.cvtColor(image_rgb, cv2.COLOR_RGB2HSV)
+# HSV Image
+plt.imshow(image_hsv)
+plt.title("HSV Image")
+plt.axis("off")
+```
+
+<img width="266" height="411" alt="image" src="https://github.com/user-attachments/assets/81141338-1f3c-4909-a08e-b194efa00304" />
+
 
 ```python
 # Convert RGB to GRAYa
@@ -163,6 +197,19 @@ plt.imshow(image_gray, cmap='gray')
 plt.title("Grayscale Image")
 plt.axis("off")
 ```
+
+<img width="266" height="411" alt="image" src="https://github.com/user-attachments/assets/b431e28c-6a78-4600-a305-f28eadcee130" />
+
+```
+# Convert RGB to YCrCb
+image_ycrcb = cv2.cvtColor(image_rgb, cv2.COLOR_RGB2YCrCb)
+# YCrCb Image
+plt.imshow(image_ycrcb)
+plt.title("YCrCb Image")
+plt.axis("off")
+```
+
+<img width="266" height="411" alt="image" src="https://github.com/user-attachments/assets/a5771b71-8b9e-4921-94d5-3b7db4bbc392" />
 
 
 ```python
@@ -182,6 +229,76 @@ plt.title("Flipped Horizontally")
 plt.axis("off")
 ```
 
+```
+# Convert HSV back to RGB
+image_hsv_to_rgb = cv2.cvtColor(image_hsv, cv2.COLOR_HSV2RGB)
+plt.imshow(image_hsv_to_rgb)
+plt.title("HSV to RGB Image")
+plt.axis("off")
+```
+
+<img width="266" height="411" alt="image" src="https://github.com/user-attachments/assets/c4c0c045-4d3f-4171-b792-269b85ba727d" />
+
+```
+# Modify a block of pixels (300x300) to white, starting from (200, 200)
+image[200:500, 200:500] = [255, 255, 255]  # Rows: 200-499, Columns: 200-499
+# Convert BGR to RGB for displaying with Matplotlib
+image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+# Display the modified image
+plt.imshow(image_rgb)
+plt.title("Image with 300x300 White Block")
+plt.axis("off")
+plt.show()
+```
+
+<img width="294" height="411" alt="image" src="https://github.com/user-attachments/assets/339ca716-efb7-4f67-9342-a09b4e727cb0" />
+
+```
+# Resize the image to half its size
+resized_image = cv2.resize(image, (768 // 2, 600 // 2))  # (new_width, new_height)
+# Convert BGR to RGB for displaying with Matplotlib
+resized_image_rgb = cv2.cvtColor(resized_image, cv2.COLOR_BGR2RGB)
+resized_image_rgb.shape
+```
+```
+(300, 384, 3)
+```
+
+```
+# Display the resized image
+plt.imshow(resized_image_rgb)
+plt.title("Resized Image (Half Size)")
+plt.axis("off")
+plt.show()
+```
+
+<img width="493" height="411" alt="image" src="https://github.com/user-attachments/assets/0592e214-d2e1-404d-9c3d-733e2b7e271d" />
+
+```
+# Crop a 300x300 region starting from (50, 50)
+roi = image[50:350, 50:350]  # Rows: 50-349, Columns: 50-349
+# Convert BGR to RGB for displaying with Matplotlib
+roi_rgb = cv2.cvtColor(roi, cv2.COLOR_BGR2RGB)
+# Display the cropped region (ROI)
+plt.imshow(roi_rgb)
+plt.title("Cropped Region of Interest (ROI)")
+plt.axis("off")
+plt.show()
+```
+
+<img width="389" height="411" alt="image" src="https://github.com/user-attachments/assets/02321761-7b78-4e12-ac40-377fe5d0de11" />
+
+```
+# Flip the image horizontally (left-right)
+flipped_horizontally = cv2.flip(image, 1)
+# Convert BGR to RGB for displaying with Matplotlib
+flipped_horizontally_rgb = cv2.cvtColor(flipped_horizontally, cv2.COLOR_BGR2RGB)
+# Horizontal flip
+plt.imshow(flipped_horizontally_rgb)
+plt.title("Flipped Horizontally")
+plt.axis("off")
+```
+<img width="266" height="411" alt="image" src="https://github.com/user-attachments/assets/e3220a6b-61f1-4130-bd49-db4e575c3ae1" />
 
 
 ```python
@@ -197,6 +314,7 @@ plt.imshow(flipped_vertically_rgb)
 plt.title("Flipped Vertically")
 plt.axis("off")
 ```
+<img width="266" height="411" alt="image" src="https://github.com/user-attachments/assets/4f7c5d3a-1ad5-4a4b-bd2f-bf0335878e50" />
 
 
 
