@@ -140,7 +140,7 @@ image = cv2.imread('Qno. 1.jpg')
 img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
 # Add text to the image
-text_img = cv2.putText(img_rgb, "MUTHUAKASH M", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 0), 10)  ## cv2.putText(image, text, position, font, font_scale, color, thickness)
+text_img = cv2.putText(img_rgb, "Prahathieswaran S", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 0), 10)  ## cv2.putText(image, text, position, font, font_scale, color, thickness)
 
 
 plt.imshow(text_img, cmap='viridis')  
@@ -164,6 +164,7 @@ plt.axis("off")
 ```
 
 <img width="266" height="411" alt="image" src="https://github.com/user-attachments/assets/f75bf734-d68b-4695-a6a4-91fc95f1cff9" />
+
 ```
 # Load the image
 image = cv2.imread(image_path)
@@ -175,17 +176,6 @@ img.shape
 ```
 (1536, 1024, 3)
 ```
-
-```
-# Convert RGB to HSV
-image_hsv = cv2.cvtColor(image_rgb, cv2.COLOR_RGB2HSV)
-# HSV Image
-plt.imshow(image_hsv)
-plt.title("HSV Image")
-plt.axis("off")
-```
-
-<img width="266" height="411" alt="image" src="https://github.com/user-attachments/assets/81141338-1f3c-4909-a08e-b194efa00304" />
 
 
 ```python
